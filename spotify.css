@@ -1,0 +1,299 @@
+
+body{
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background-color: black;
+  color: #fff;
+  overflow: hidden;
+}
+
+.main{
+  display: flex;
+  height: 100vh;
+  padding: 0.5rem;
+  
+}
+.sideBar{
+  background-color: rgb(0, 0, 0);
+  width: 360px;
+  border-radius: 1rem;
+  margin-right: 0.5rem;
+}
+.main-content{
+  background-color: #121212;
+  flex: 1;
+  border-radius: 1rem;
+  overflow:scroll;
+  padding: 0 1.5rem 0 1.5rem;
+
+}
+.musicPlayer{
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}
+a{
+  text-decoration: none;
+  color: white;
+
+}
+.nav{
+  background-color: #121212;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+  padding: 0.5rem 0.9rem;
+
+}
+.nav-option{
+  height: 2.5rem;
+  opacity: 0.5;
+  padding: 0.8rem;
+}
+.nav-option:hover{
+  opacity: 1;
+}
+.nav-option i{
+  font-size: 1.25rem;
+  margin-right: 100px;
+}
+.nav-option  a{
+  font-size: 1.1rem;
+}
+
+.library{
+  background-color: #121212;
+  border-radius: 1rem;
+   height: 100%;
+   margin-top: 0.5rem;
+    padding: 0.8rem;
+}
+.options{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.lib-options img{
+    height: 1.5rem;
+    width: 1.25rem;
+}
+.icons{
+  font-size: 1.3rem;
+  display: flex;
+ 
+}
+.icons i{
+   opacity: 0.5;
+  margin-right: 1rem;
+}
+.icons i:hover{
+   opacity:1;
+}
+.box{
+  height: 8rem;
+  background-color: #232323;
+  border-radius: 0.75rem;
+  margin: 0.75rem 0 1.75rem 0;
+  padding: 0.5rem 1rem;
+}
+.box-p1{
+  font-size: 1rem;
+  font-weight: 600;
+}
+.box-p2{
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+.badge{
+  background-color: white;
+  border: none;
+  border-radius: 100px;
+  padding: 0.25rem 1rem;
+  font-weight: 600;
+  margin: 0.5rem;
+  height: 2rem;
+  width: fit-content;
+}
+.dark-badge{
+   background-color: #000;
+   color: white;
+}
+.dark-badge:hover{
+   color: #000;
+   background-color: white;
+}
+.sticky-nav{
+position: sticky;
+top: 0;
+background-color: #121212;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem 0 1rem 0;
+z-index: 10;
+}
+.sticky-nav-icons{
+  margin-left: 0.75rem;
+}
+.sticky-nav-options{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-item{
+  margin-right: 1.6rem;
+}
+@media(max-width:1000px){
+    .hide{
+      display: none;
+    }
+}
+.card{
+  background-color: rgba(58, 43, 43, 0.068);
+  width: 150px;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-left: 3rem;
+}
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-img{
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.card-title{
+  font-weight: 600;
+}
+.card-info{
+  opacity: 0.6;
+  font-size: 0.7rem;
+}
+.footer{
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line{
+  width: 90%;
+  height: 30%;
+  border-top: 1px solid white;
+}
+.musicPlayer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player{
+  width: 50%;
+}
+.control{
+  width: 25%;
+}
+.player-control{
+   display: flex;
+  justify-content:center ;
+  align-items: center;
+ 
+}
+
+
+.player-control-icon{
+  height: 0.9rem;
+   margin-right: 2.7rem;
+   opacity: 0.6;
+}
+.player-control-icon:hover{
+   opacity: 1;
+}
+.playbackBar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progressBar{
+  width: 60%;
+}
+
+.album{
+  width: 25%;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+}
+.album-logo{
+  height: 4rem;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  width: 4.7rem;
+  
+}
+.albumsongart{
+  margin-left:1.5rem; 
+  line-height: 0.3rem;
+}
+.artNm{
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+.songNm{
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+}
+.artNm:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.songNm:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.plusicon{
+  margin-left: 1.5rem;
+  opacity: 0.5;
+}
+.plusicon:hover{
+  
+  opacity:1;
+}
+.progressBar::-webkit-slider-runnable-track{
+  background-color: white;
+  border-radius: 100px;
+  height: 0.2rem;
+}
+  .progressBar::-webkit-slider-thumb {
+  -webkit-appearance: none;  /* Required to apply custom style */
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: greenyellow;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -6px; /* aligns the thumb with the track */
+  border: none;
+}
+.volcol{
+  width: 3.5rem;
+}
+.controlicons{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 0.9rem;
+  
+}
+i{
+  opacity: 0.5;
+}
+i:hover{
+  opacity:1;
+}
+
