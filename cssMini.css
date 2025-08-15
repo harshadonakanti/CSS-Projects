@@ -4,7 +4,7 @@
   font-family: "Roboto", sans-serif;
 }
 .mainBox{
-  background-image: url("photo.jpg");
+  background-image: url("photoForMiniProject.jpg");
   height: 100vh;
   background-size: cover;
 }
